@@ -47,9 +47,10 @@ class Student
 
   def self.create(name:, grade:)
     students = Student.new(name, grade)
+    binding.pry
+
     students.save
     students
-    binding.pry
   end
 
   def self.find_by_name(name)
